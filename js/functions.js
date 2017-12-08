@@ -1,10 +1,10 @@
 $(document).ready(function(){
-		/*var $content = $('.content');
+		var $content = $('.content');
 		var testObject = {'content':$content};
 		localStorage.setItem('testObject', JSON.stringify(testObject));
 
 		// Retrieve the object from storage
-		/*var retrievedObject = localStorage.getItem('testObject');
+		var retrievedObject = localStorage.getItem('testObject');
 
 		console.log('retrievedObject: ', JSON.parse(retrievedObject));
 		
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	})
 
 	//function for changing url
-	/*$(function() {
+	$(function() {
  		 var $content = $('.content');
  		 $(document).on('click', '.tab', function() {
   		  var href = $(this).attr('href')
@@ -26,15 +26,10 @@ $(document).ready(function(){
   		  $content.load(href)
   		  return false;
  			 });
-		});*/
-	$('.tab').on('click', function(){
-		var pathArray = window.location.pathname.split( '/' );
-		pathArray[6]=$(this).data('id');
-		console.log('pathArray is ' + pathArray[6]); // 6 for localhost
-		console.log($(this).data('id'));
+		});*
 
 
-	});
+
 	/*function for star*/
 	$(".star-fav").on('click', function(){
 		$(this).toggleClass('yellow');
@@ -43,4 +38,4 @@ $(document).ready(function(){
 
 	});
 
-
+	
