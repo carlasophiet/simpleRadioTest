@@ -1,0 +1,245 @@
+body{
+	overflow:hidden;
+}
+
+/*Header Styles*/
+header{
+	width: 100%;
+	position:fixed;
+	top:0px;
+	z-index: 2000;
+}
+
+header .row{ margin-bottom: 0px !important; }
+.title { display:flex;}
+
+.title img { height: 64px; }
+
+.title i { font-size: 48px !important; }
+
+#logo {width: 50%;}
+
+.tabs .indicator{
+	background-color:#90CAF9 !important;
+	height: 3px !important;
+}
+
+.carousel .carousel-item{
+  width:100%;
+  height: 100vh;
+}
+
+.tabs .tab a {font-size: 24px !important;}
+
+#searcher {
+	color:white !important;
+	font-size: 48px;
+}
+
+/*Containers Style*/
+.container{
+	width: 100% !important;
+	max-width: 100% !important;
+	margin: 0 0 !important;
+}
+.content{
+	width: 100% !important;
+	padding-top: 170px;
+	overflow: auto;
+	height: 100vh;
+	max-width: 100% !important;
+}
+/*Icons Style*/
+.material-icons.md-36 { font-size: 36px; }
+
+.material-icons.md-48 { font-size: 48px; }
+
+
+/*Table Styles*/
+.collection .collection-item.avatar {
+    padding-left: 50px !important; 
+}
+.collection .collection-item { 
+	border-bottom: 2.5px solid #ECE8E8 !important;
+	border-top: 2.5px solid #ECE8E8 !important;
+	border-left:5px solid #ECE8E8 !important; 
+	border-right:5px solid #ECE8E8 !important;
+}
+
+.radio-fav{ display:flex; }
+
+.title-info{ padding: 50px; }
+
+.title-fav{ font-size: 28px;}
+
+.fav-sub{ font-size: 20px; }
+
+
+/*Favorites Tab Styles*/
+
+.btn, .btn-large {
+    color: grey !important;
+    background-color: white !important;
+    padding-top:50px;
+    margin-left: auto;
+}
+
+.dropdown-content{
+    margin-left: auto;
+    width: 250px !important;
+    top: 30px !important;
+    left: 980px !important;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{ color: gray !important; }
+
+
+/*Recommended Tab Styles**/
+.star-fav{
+	color: white !important;
+
+    text-shadow:
+    -1px -1px 0 #bdbdbd,
+    1px -1px 0 #bdbdbd,
+    -1px 1px 0 #bdbdbd,
+    1px 1px 0 #bdbdbd;  
+
+}
+
+.yellow{ 
+	color: yellow !important; 
+	text-shadow:none;
+}
+
+/*MEDIA QUERIES*/
+
+/*portrait cellphone*/
+@media screen and  (max-width: 480px) and (orientation: portrait){
+	/*Header*/
+	.title img {height: 34px !important;}
+
+	h2 {
+		font-size: 1.5rem !important;
+		width: 800px;
+	}
+
+	#searcher {font-size: 24px;}
+
+	header .row .col.offset-s6 {margin-left: 20%;}
+
+	.tabs .tab a {font-size: 14px !important;}
+	
+	.content { padding-top: 120px !important;}
+
+	/*Table Style*/
+	img.responsive-img, video.responsive-video {
+    width: 40% !important;
+    height: 70% !important;
+    margin-top: 15px !important;
+    margin-left: -10px;
+	}
+	
+	.collection .collection-item.avatar {padding-left: 20px !important;}
+
+	.title-info {
+		padding: 10px !important;
+		margin-top: 20px;
+	} 
+
+	.title-fav {font-size: 14px !important;}
+
+	.fav-sub {font-size: 12px !important;}
+	
+	/*Btn Style*/
+	.btn, .btn-large {
+		background-color: transparent !important;
+		padding-top: 40px;
+		width: 12px;
+		margin-top: 0px;
+	}
+	
+	/*Icons Style*/
+	.material-icons.md-48 {font-size: 24px !important;}
+	.material-icons.md-36 {font-size: 24px !important;}
+
+	/*Recommended Tab Style*/
+	.collection .collection-item.avatar .secondary-content {top: 0px !important;}
+
+	/*Favorites Tab Style*/
+	.dropdown-content{
+    margin-left: auto;
+    width: 250px !important;
+    height:;
+    top: 12px !important;
+    left: 100px !important;
+	}
+
+	.dropdown-content li>a, .dropdown-content li>span {font-size: 12px !important;}
+	
+	.dropdown-content li>a>i {margin: 0 15px 0 0 !important;}
+
+}
+
+/*landscape cellphone*/
+@media screen and  (max-height:480px) and (orientation: landscape){
+	/*Header*/
+	.title img {height: 34px !important;}
+
+	h2 {
+		font-size: 1.5rem !important;
+		width: 800px;
+		padding-left: 15px
+	}
+
+	#searcher {font-size: 24px;}
+
+	header .row .col.offset-s6 {margin-left: 20%;}
+
+	.tabs .tab a {font-size: 14px !important;}
+	
+	.content{padding-top: 120px !important;}
+
+	/*Table Style*/
+	img.responsive-img, video.responsive-video {
+    width: 15% !important;
+    height: 70% !important;
+    margin-top: 0px !important;
+	}
+	
+	.collection .collection-item.avatar {padding-left: 20px !important;}
+
+	.title-info {padding: 10px !important;} 
+
+	.title-fav {font-size: 14px !important;}
+
+	.fav-sub {font-size: 12px !important;}
+	
+	/*Btn Style*/
+	.btn, .btn-large {
+		background-color: transparent !important;
+    	padding-top: 10px !important;
+    	margin-top: 10px;
+    }
+	
+	/*Icons Style*/
+	.material-icons.md-48 {font-size: 24px !important;}
+	.material-icons.md-36 {font-size: 24px !important;}
+	
+	/*Recommended Tab Style*/
+	.collection .collection-item.avatar .secondary-content {top: 5px !important;}
+
+	/*Favorites Tab Style*/
+	.dropdown-content{
+    margin-left: auto;
+    width: 250px !important;
+    height:;
+    top: 12px !important;
+    left: 300px !important;
+	}
+
+	.dropdown-content li>a, .dropdown-content li>span {font-size: 12px !important;}
+	
+	.dropdown-content li>a>i {margin: 0 15px 0 0 !important;}
+
+
+}

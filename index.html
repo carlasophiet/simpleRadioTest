@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="theme-color" content="#2196F3">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="icon" sizes="192x192" href="nice-highres.png">
+    	<link rel="manifest" href="/manifest.json">
+ 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+ 	 	<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+ 	 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+ 	 	<script type="text/javascript" src="js/materialize.min.js"></script>
+    	<script type="text/javascript" src="js/functions.js"></script>
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<header class="blue fixed">
+			<div class="row valign-wrapper">
+				<div class ="col s8 m8 l8 offset-l1 title valign-wrapper">
+					<img src="imgs/streema-logo.png" title="logo" alt ="logo" class="img-responsive"/>
+					<h2 class="white-text brand-logo">Simple Radio</h2>
+				</div>
+				<div class="col s2 m2 l2 offset-s6">
+					<a><i class="material-icons" id= "searcher">search</i></a>
+				</div>		
+			</div>	
+			<!--close div 1st row-->
+			<div class="row">
+    				<div class="col s12">
+      					<ul class="tabs tabs-transparent">
+       						<li class="tab col s6 m6 l6 blue z-depth-0" data-id="favorites"><a class="waves-effect waves-blue-darken-2" href="#favorites" >FAVORITES</a></li>
+        					<li class="tab col s6 m6 l6 card-panel blue z-depth-0" data-id="recommended"><a class="active  waves-effect waves-blue-darken-3" href="#recommended">RECOMMENDED</a></li>
+      					</ul>
+    				</div>
+			</div>
+			<!--close div 2nd row-->
+		</header>	
+		<!-- CLOSE HEADER -->
+		<!-- START FAVORITES TAB-->
+		<div class="container">
+			<section class="col s12 card-panel white content z-depth-0" id= "favorites">
+	  				<ul class="collection fixed">
+	      				<li class="collection-item avatar radio-fav">         
+	          			<img src="imgs/radiometro.jpg" alt="logo-radio" class="responsive-img">
+	             		<div class="title-info ">
+	               			 <span class="title-fav grey-text">Metro 95.1</span>
+	                		<p class="grey-text text-lighten-1 fav-sub">FM 95.1</p>              
+	              		</div>
+	          			<a class='dropdown-button btn z-depth-0 right-align' href='#' data-activates='dropdown1'><i class="material-icons md-48">more_vert</i></a>
+	            <!-- Dropdown Structure -->
+	                <ul id='dropdown1' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>  
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	  		 </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/radiocontinental.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                <span class="title-fav grey-text  ">Radio Continental</span>
+	                <p class="grey-text text-lighten-1 fav-sub">AM 590</p>              
+	              </div>
+	              <a class='dropdown-button btn z-depth-0 right-align ' href='#' data-activates='dropdown2'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown2' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/radiokiss.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                <span class="title-fav grey-text">Kiss FM</span>
+	                <p class="grey-text text-lighten-1 fav-sub">FM 100.0</p>              
+	              </div>
+	              <a class="dropdown-button btn z-depth-0 right-align" href='#' data-activates='dropdown3'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown3' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/los40radio.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                <span class="title-fav grey-text">Los 40 Principales Argentina</span>
+	                <p class="grey-text text-lighten-1 fav-sub">FM 105.5</p>              
+	              </div>
+	              <a class='dropdown-button btn z-depth-0 right-align' href='#' data-activates='dropdown4'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown4' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36 ">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/caraibesradio.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                  <span class="title-fav grey-text ">Caraibes FM</span>
+	                  <p class="grey-text text-lighten-1 fav-sub">FM 94.5</p>              
+	              </div>
+	              <a class='dropdown-button btn z-depth-0 right-align ' href='#' data-activates='dropdown5'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown5' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/radiobh.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                  <span class="title-fav grey-text ">Radio BH FM</span>
+	                  <p class="grey-text text-lighten-1 fav-sub">FM 102.1</p>              
+	              </div>
+	              <a class='dropdown-button btn z-depth-0 right-align ' href='#' data-activates='dropdown6'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown6' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/radio77wabc.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                <span class="title-fav grey-text ">77 WABC - WABC</span>
+	                <p class="grey-text text-lighten-1 fav-sub">AM 770</p>              
+	              </div>
+	              <a class='dropdown-button btn z-depth-0 right-align ' href='#' data-activates='dropdown7'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown7' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/radioaspen.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                  <span class="title-fav grey-text ">Aspen 102.3</span>
+	                  <p class="grey-text text-lighten-1 fav-sub">FM 102.3</p>              
+	              </div>
+	              <a class='dropdown-button btn z-depth-0 right-align ' href='#' data-activates='dropdown8'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown8' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/radioconvos.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                  <span class="title-fav grey-text ">Radio Con Vos</span>
+	                  <p class= "grey-text text-lighten-1 fav-sub">FM 89.9</p>      
+	              </div>
+	              <a class='dropdown-button btn z-depth-0 right-align ' href='#' data-activates='dropdown9'><i class="material-icons md-48">more_vert</i></a>
+	              <!-- Dropdown Structure -->
+	              <ul id='dropdown9' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->
+	            <li class="collection-item avatar radio-fav">
+	              <img src="imgs/radioevangelizar.jpg" alt="logo-radio" class="responsive-img">
+	              <div class="title-info">
+	                  <span class="title-fav grey-text">Radio Evangelizar</span>
+	                  <p class= "grey-text text-lighten-1 fav-sub">AM 103.8</p>              
+	              </div> 
+	              <a class='dropdown-button btn z-depth-0 right-align ' href='#' data-activates='dropdown10'><i class="material-icons md-48">more_vert</i></a>
+	                    <!-- Dropdown Structure -->
+	              <ul id='dropdown10' class='dropdown-content'>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">info_outline</i>
+	                    <span class="grey-text">Station's information</span>
+	                  </a>
+	                </li>
+	                <li>
+	                  <a href="#!">
+	                    <i class="material-icons md-36">delete</i>
+	                    <span class="grey-text">Delete from Favorites</span>
+	                  </a>
+	                </li>
+	                <li class="divider"></li> 
+	              </ul>
+	            </li><!-- CLOSE RADIO INFO-->                            
+	          </ul><!--CLOSE RADIO LIST -->
+	  	</section>
+	  	<!-- CLOSE FAVORITES TAB, START RECOMMENDED TAB-->
+	  	<section class="col s12 card-panel white content z-depth-0" id="recommended">
+	    <!--STARTS LIST-->
+				<ul class="collection">
+			    	<li class="collection-item avatar radio-fav">
+		          		<img src="imgs/radiometro.jpg" alt="logo-radio" class="responsive-img">
+		            	<div class="title-info ">
+		              		<span class="title-fav grey-text">Metro 95.1</span>
+		             		 <p class="grey-text text-lighten-1 fav-sub">FM 95.1</p>               
+		           		 </div>
+						<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav "><i class="material-icons md-48 ">star</i></a>
+		          	</li>
+		          <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+			         	<img src="imgs/radiocontinental.jpg" alt="logo-radio" class="responsive-img">
+			         	<div class="title-info">
+			             	<span class="title-fav grey-text  ">Radio Continental</span>
+			            	 <p class="grey-text text-lighten-1 fav-sub">AM 590</p>
+		            	</div>
+						<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav  "><i class="material-icons md-48 ">star</i></a>
+		          	</li>
+		        <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+		          		<img src="imgs/los40radio.jpg" alt="logo-radio" class="responsive-img">
+		           		<div class="title-info">
+		             		 <span class="title-fav grey-text">Los 40 Principales Argentina</span>
+		             		 <p class="grey-text text-lighten-1 fav-sub">FM 105.5</p>	 
+		           		 </div>  
+						<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav  "><i class="material-icons md-48 ">star</i></a>	
+		        	</li>
+		        <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+		          		<img src="imgs/radiometro.jpg" alt="logo-radio" class="responsive-img">
+		           	    <div class="title-info ">
+		             		 <span class="title-fav grey-text">Metro 95.1</span>
+		             		 <p class="grey-text text-lighten-1 fav-sub">FM 95.1</p>  
+		            	</div>
+						<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav  "><i class="material-icons md-48 ">star</i></a>		
+					</li>
+		        <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+		            	<img src="imgs/caraibesradio.jpg" alt="logo-radio" class="responsive-img">
+		           		<div class="title-info">
+		             		<span class="title-fav grey-text ">Caraibes FM</span>
+		              		<p class="grey-text text-lighten-1 fav-sub">FM 94.5</p>
+		           		</div>
+						<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav"><i class="material-icons md-48 ">star</i></a>
+		         	</li>
+		        <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+		            	<img src="imgs/radiobh.jpg" alt="logo-radio" class="responsive-img">
+		           	    <div class="title-info">
+		             		 <span class="title-fav grey-text ">Radio BH FM</span>
+		             		 <p class="grey-text text-lighten-1 fav-sub">FM 102.1</p>
+		           		</div>
+						<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav"><i class="material-icons md-48 ">star</i></a>		
+					</li>
+		        <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+		          		<img src="imgs/radio77wabc.jpg" alt="logo-radio" class="responsive-img">
+		          		<div class="title-info">
+		           		  	<span class="title-fav grey-text ">77 WABC - WABC</span>
+		           		  	<p class="grey-text text-lighten-1 fav-sub">AM 770</p>              
+		          		</div>
+						<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav "><i class="material-icons md-48 ">star</i></a>		
+					</li>
+		        <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+		        	 	 <img src="imgs/radioaspen.jpg" alt="logo-radio" class="responsive-img">
+		         	 	 <div class="title-info">
+		         	  		 <span class="title-fav grey-text ">Aspen 102.3</span>
+		          	 	 	 <p class="grey-text text-lighten-1 fav-sub">FM 102.3</p>              
+		          	 	 </div>
+					 	 <a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav  "><i class="material-icons md-48 ">star</i></a>	
+					</li>
+		        <!--CLOSE RADIO-->
+			    	<li class="collection-item avatar radio-fav">
+			          <img src="imgs/radioconvos.jpg" alt="logo-radio" class="responsive-img">
+			          <div class="title-info">
+			            <span class="title-fav grey-text ">Radio Con Vos</span>
+			            <p class= "grey-text text-lighten-1 fav-sub">FM 89.9</p>      
+			          </div>
+								<a href="#!" class="btn z-depth-0 secondary-content right-align valign-wrapper star-fav  "><i class="material-icons md-48 ">star</i></a>
+			        </li>
+	        <!--CLOSE RADIO-->
+		 		</ul>
+	       <!--CLOSE LIST-->
+		</section>
+	    <!--CLOSE CONTENEDOR TAB RECOMMENDED-->
+	</div>
+	    <!--CLOSE CONTAINER-->
+</body>
+</html>
