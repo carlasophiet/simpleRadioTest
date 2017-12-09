@@ -33,8 +33,8 @@ $(document).ready(function(){
   		  return false;
  			 });
 		});*/
-
-		var urlChange = window.location.pathname.split('/')[6]
+		window.location="http://localhost/"
+		var urlChange = "http://localhost/"	
 		var testObject = {'url' : urlChange}
 		localStorage.setItem('testObject', JSON.stringify(testObject))
 		// Retrieve the object from storage
