@@ -1,5 +1,5 @@
 $(document).ready(function(){
-		var $content = $('.content');
+		/*var $content = $('.content');
 		var testObject = {'content':$content};
 		localStorage.setItem('testObject', JSON.stringify(testObject));
 
@@ -26,7 +26,27 @@ $(document).ready(function(){
   		  $content.load(href)
   		  return false;
  			 });
-		});*
+		});*/
+		var urlChange = window.location.pathname.split('/')[6]
+		var testObject = {'url' : urlChange}
+		localStorage.setItem('testObject', JSON.stringify(testObject))
+		// Retrieve the object from storage
+		var retrievedObject = localStorage.getItem('testObject');
+		console.log('retrievedObject: ', JSON.parse(retrievedObject));
+		
+		$(function(){
+		$(document).on('click', '.tab', function(){
+			var href = $(this).find('a').attr('href').replace('#', '');
+			console.log('href is ' + href)
+			console.log('urlChange is ' + urlChange)
+			if ($('.tab').attr('state') == 'active'){
+				window.history.pushState({}, 'Simple Radio | ' + href , href)
+				urlChange.load({href})
+				return false;
+			}
+			
+		});
+	})
 
 
 
