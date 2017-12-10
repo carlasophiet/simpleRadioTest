@@ -225,14 +225,14 @@ header .row{ margin-bottom: 0px !important; }
 	.material-icons.md-48 {font-size: 24px !important;}
 	.material-icons.md-36 {font-size: 24px !important;}
 	
+	
 	/*Recommended Tab Style*/
 	.collection .collection-item.avatar .secondary-content {top: 5px !important;}
-
+	.star-fav{margin-top:12px !important;}
 	/*Favorites Tab Style*/
 	.dropdown-content{
     margin-left: auto;
     width: 250px !important;
-    height:;
     top: 12px !important;
     left: 300px !important;
 	}
